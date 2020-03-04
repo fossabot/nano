@@ -15,6 +15,6 @@ If you need to reach out to me, you can via:
 - Email: **[hello [at] doamatto.xyz](mailto:hello@doamatto.xyz)**
 - Instagram: **[@doamatto](https://instagr.am/doamatto)** or **[@thetruedoormat](https://instagr.am/thetruedoormat)**
 
-If you need a product-specific contact, please go to the [contact page here.](contact.md)
+If you need a product-specific contact, please go to the [contact page here.](https://doamatto.xyz/contact)
 
 If you need a copy of my C.V., you can request one via my email above.

@@ -32,13 +32,9 @@ navigation: # Control the Navigation Bar
     url: /
   - title: About Nano
     url: /about-nano/
-  - title: About doamatto
+  - title: About Matt
     url: /about/
 
 footerLinks: # Control the Footer Links
-  - title: Imprint
-    url: /imprint
-  - title: Privacy Policy
-    url: /privacy
-  - title: Contact
-    url: /contact
+  - title: Github
+    url: https://github.com/doamatto/nano
