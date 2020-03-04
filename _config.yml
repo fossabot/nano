@@ -1,4 +1,41 @@
-site: Nano
-url:    # Where this is hosted
-title: Nano
-description: A super lightweight Jekyll theme built to work great with mobile, and even better on mobile networks.
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - nano.gemspec
+  - .jekyll-cache
+
+plugins:
+  - jekyll
+
+paginate: 2
+paginate_path: blog/page:num
+author: # For SEO
+
+sass:
+  style: compressed
+permalink: pretty # /YYYY/MM/DD/page-name/
+excerpt_separator: <!-- more -->
+
+encoding: utf-8 # Change if you know you aren't using
+lang: en-GB # Site language
+title: "Nano" # Site name
+description: "" # Site description
+
+favicons:
+  64: '/assets/favicon@64.png'
+
+navigation:
+  - title: Home
+    url: /
+  - title: Posts
+    url: /posts/
+  - title: About
+    url: /about/
+
+footer:
+  - title: Created by doamatto
+    url: https://doamatto.xyz
+

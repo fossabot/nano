@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <ul class="links">
+                {% for item in site.navigation %}
+                    {% if item.url contains '://' %}
+                        {% assign url = item.url %}
+                    {% else %}
+                        {% assign url = item.url | relative_url %}
+                    {% endif %}
+                    <li> <a class="navLink" href="{{ url}}">{{item.title}}</a> </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

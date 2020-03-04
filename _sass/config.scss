@@ -1,0 +1,21 @@
+// Main Colour
+$LIGHTbgColour: #ffffff;
+$DARKbgColour: #000000;
+$accentColour: #1caf88;
+
+// Text Colour
+$LIGHTtextColour: #000;
+$LIGHTlinkColour: #000;
+$LIGHTlinkHoverColour: #2e2e2e;
+$DARKtextColour: #fff;
+$DARKlinkColour: #fff;
+$DARKlinkHoverColour: #d1d1d1;
+
+// Typography
+$font: 'Inter, sans-serif';
+$font-regular: 400;
+$font-bold: 700;
+$font-italic: italic;
+
+// Switch this to whatever font you need, local or remote
+@import url('https://rsms.me/inter/inter.css');

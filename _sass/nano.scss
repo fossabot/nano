@@ -1,0 +1,74 @@
+// Import configuration
+@charset "utf-8";
+@import "config";
+
+// Light and Dark Themes for Mobile
+@media (prefers-color-scheme: light) {
+    html {
+        background: $LIGHTbgColour;
+        color: $LIGHTtextColour;
+    }
+    a, .navLink {
+        color: $LIGHTlinkColour;
+    }
+    a:hover, .navLink:hover {
+        color: $LIGHTlinkHoverColour;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: $darkBGColour;
+        color: $DARKtextColour;
+    }
+    a, .navLink {
+        color: $DARKlinkColour;
+    }
+    a:hover, .navLink:hover {
+        color: $DARKlinkHoverColour;
+    }
+}
+
+body {
+    font-family: $font;
+    font-weight: $font-regular;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.container {
+    margin: 1em auto;
+    max-width: 40em;
+}
+
+.header h1 {
+    font-weight: $font-regular;
+    font-size: 4.5em;
+}
+
+a { transition: color 500ms; }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.navLink {
+    padding: .25em 1em 1em .25em;
+    text-decoration: none;
+}
