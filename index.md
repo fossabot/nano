@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-notitle
 title: Home
 ---
 

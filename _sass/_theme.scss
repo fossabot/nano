@@ -8,10 +8,10 @@
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
-    a, .navLink, .header {
+    a {
         color: $LIGHTlinkColour;
     }
-    a:hover, .navLink:hover {
+    a:hover {
         color: $LIGHTlinkHoverColour;
     }
 }
@@ -21,18 +21,24 @@
         background: $DARKbgColour;
         color: $DARKtextColour;
     }
-    a, .navLink, .header {
+    a {
         color: $DARKlinkColour;
     }
-    a:hover, .navLink:hover {
+    a:hover {
         color: $DARKlinkHoverColour;
     }
 }
 
 // Site Header (_includes/site-header.html)
 .header {
+    background: $accentColour;
+    color: $headerTextColour;
     width: 100%;
-    height: 7.5em;
+    padding-bottom: 2em;
+}
+
+.nav_logo {
+    width: 4em;
 }
 
 .nav {
@@ -52,7 +58,10 @@
 .navLink {
     padding: .25em 1em 1em .25em;
     text-decoration: none;
+    color: $navColour;
 }
+
+.navLink:hover { color: $navHoverColour; }
 
 .header h1 {
     font-weight: $font-regular;
@@ -78,6 +87,8 @@ footer {
 body {
     font-family: $font;
     font-weight: $font-regular;
+    font-size: 1.125em;
+    margin: -20px 0px 8px 0px;
 }
 
 .container {
@@ -85,4 +96,15 @@ body {
     max-width: 40em;
 }
 
+.center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
 a { transition: color 500ms; }
+hr { color: $breakColour; }
+.bold { font-weight: $font-bold; }
