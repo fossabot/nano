@@ -24,18 +24,21 @@ lang: en-GB # Site language
 title: "Nano" # Site name
 description: "" # Site description
 
-favicons:
+favicons: # Add a favicon. It isn't recommended to go over 64x64
   64: '/assets/favicon@64.png'
 
-navigation:
+navigation: # Control the Navigation Bar
   - title: Home
     url: /
-  - title: Posts
-    url: /posts/
-  - title: About
+  - title: About Nano
+    url: /about-nano/
+  - title: About doamatto
     url: /about/
 
-footer:
-  - title: Created by doamatto
-    url: https://doamatto.xyz
-
+footerLinks: # Control the Footer Links
+  - title: Imprint
+    url: /imprint
+  - title: Privacy Policy
+    url: /privacy
+  - title: Contact
+    url: /contact

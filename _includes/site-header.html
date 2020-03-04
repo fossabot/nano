@@ -8,7 +8,7 @@
                     {% else %}
                         {% assign url = item.url | relative_url %}
                     {% endif %}
-                    <li> <a class="navLink" href="{{ url}}">{{item.title}}</a> </li>
+                    <li> <a class="navLink" href="{{url}}">{{item.title}}</a> </li>
                 {% endfor %}
             </ul>
         </nav>
