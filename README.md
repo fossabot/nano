@@ -1,6 +1,6 @@
 # Nano
 
-**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj/nano-clean-jekyll-blogging-theme)**
+**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
 
 Nano is a super lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds.
 
