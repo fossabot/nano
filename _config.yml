@@ -1,3 +1,32 @@
+lang: en-GB # Site language
+title: "Nano" # Site name; SEO
+description: "" # Site description; SEO
+author: "doamatto" # For SEO
+logo: "/assets/logo.svg" # Site logo
+favicon: "/assets/logo.svg" # Add a favicon.
+
+tagline: "Nano for Jekyll"
+navigation: # Control the Navigation Bar
+  - title: Home
+    url: /
+  - title: About Nano
+    url: /about-nano/
+  - title: About Dev
+    url: /about/
+
+webSource: "https://github.com/doamatto/nano" # Contribution Link
+copyrightName: [ "doamatto" ] # Text for after copyright
+copyrightYear: [ "2018-2020" ] # Overwrite the updating year counter
+footerLinks: # Control the Footer Links
+  - title: Imprint
+    url: "https://doamatto.xyz/imprint"
+  - title: Privacy Policy
+    url: "https://doamatto.xyz/privacy"
+  - title: Contact
+    url: "https://doamatto.xyz/contact"
+
+# Don't edit below this line
+
 exclude:
   - README.md
   - LICENSE
@@ -10,31 +39,8 @@ exclude:
 plugins:
   - jekyll
   - jekyll-sass-converter
-
-author: # For SEO
-
+  - jekyll-sitemap
+  
 sass:
   style: compressed
   sass_dir: _sass
-permalink: pretty # /YYYY/MM/DD/page-name/
-excerpt_separator: <!-- more -->
-
-encoding: utf-8 # Change if you know you aren't using
-lang: en-GB # Site language
-title: "Nano" # Site name
-description: "" # Site description
-
-favicons: # Add a favicon. It isn't recommended to go over 64x64
-  64: '/assets/favicon@64.png'
-
-navigation: # Control the Navigation Bar
-  - title: Home
-    url: /
-  - title: About Nano
-    url: /about-nano/
-  - title: About Matt
-    url: /about/
-
-footerLinks: # Control the Footer Links
-  - title: Github
-    url: https://github.com/doamatto/nano
