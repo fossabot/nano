@@ -1,6 +1,6 @@
 ---
-title: {{title}} - About
 layout: page
+title: About
 ---
 
 Lorem impsum. 
