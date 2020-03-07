@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="nav">
             {% if site.logo %}
-                <a href="{{site.baseURL}}"><img class="nav_logo" src="{{site.logo}}" /></a>
+                <a href="{{ '/index.md' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" /></a>
             {% endif %}
             <ul class="links">
                 {% for item in site.navigation %}
