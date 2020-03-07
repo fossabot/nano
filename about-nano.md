@@ -9,7 +9,7 @@ Nano is a super lightweight Jekyll theme built to work great on all platforms, r
 
 You can install Nano is two ways:
 
-**a) Cloning the demo branch.** You can clone the demo branch (labelled `docs`) and [configure based on what's recommended in the wiki of this repo](https://github.com/doamatto/nano/wiki/Configuration).
+**a) Cloning a tag.** You can clone the latest tag or the master branch and [configure based on what's recommended in the wiki of this repo](https://github.com/doamatto/nano/wiki/Configuration).
 
 **b) Installing the Gem.** You can also use `gem install nano-theme` and [configure based on what's recommended in the wiki of this repo](https://github.com/doamatto/nano/wiki/Configuration).
 
