@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["doamatto"]
   spec.email = ["hello@doamatto.xyz"]
   spec.summary = "Nano is a super lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds."
-  spec.license = "GPL-3.0"
+  spec.license = "BSD-3-Clause"
   spec.metadata = {
     "plugin_type" => "theme",
     "changelog_uri" => "https://github.com/doamatto/nano/releases",
