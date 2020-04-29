@@ -40,11 +40,12 @@
     color: $headerTextColour;
     width: 100%;
     padding-bottom: 2em;
+    max-height: 300px;
 }
 
 .header h1 {
     font-weight: $font-regular;
-    font-size: 4.5em;
+    font-size: calc(4vw + 4vh + 2vmin);
 }
 
 // Site Navigation
@@ -123,3 +124,4 @@ body {
 a { transition: color 500ms; }
 hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
+html, body { height: 100%; width: 100%; }
