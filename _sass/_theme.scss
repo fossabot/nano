@@ -29,9 +29,9 @@
     }
 }
 
-// Lists on Pages
-.container li, ul {
-    word-wrap: normal;
+// Mobile Optimizations
+@media screen and(max-height: 450px) {
+
 }
 
 // Site Header (_includes/site-header.html)
@@ -42,6 +42,12 @@
     padding-bottom: 2em;
 }
 
+.header h1 {
+    font-weight: $font-regular;
+    font-size: 4.5em;
+}
+
+// Site Navigation
 .nav_logo {
     width: 4em;
 }
@@ -68,9 +74,11 @@
 
 .navLink:hover { color: $navHoverColour; }
 
-.header h1 {
-    font-weight: $font-regular;
-    font-size: 4.5em;
+// Site Content (_layouts/page[-notitle].html)
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 // Site Footer (_includes/site-footer.html)
