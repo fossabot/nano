@@ -12,10 +12,10 @@ Everyone has already pointed out in every single donation system ever made that 
 ### Cool projects that you would be supporting by sponsoring
 All of these projects were founded and are maintained by me and/or a team I manage. These are some of my favourites I've ever worked on.
 
-- **Artam** | A Swiss-army knife for your browser adding plenty of needed features, including some you didn't know you needed
-- **Cloud Browser** | A WebKit-based browser built with user privacy, speed, and security in mind
-- **SimplyJS** | A lightweight alternative to libraries like jQuery
-- **Swift** | A feature rich Discord bot written in Go to allow users to have plenty of power and features with no hassle.
+- [**Artam**](https://github.com/doamatto/artam) - A Swiss-army knife for your browser adding plenty of needed features, including some you didn't know you needed
+- [**Cloud Browser**](https://github.com/Cloud-Browser) - A WebKit-based browser built with user privacy, speed, and security in mind
+- [**SimplyJS**](http://github.com/doamatto/simply.js) - A lightweight alternative to libraries like jQuery
+- [**Swift**](https://github.com/doamatto/swiftbot) - A feature rich Discord bot written in Go to allow users to have plenty of power and features with no hassle.
 
 You can see the full list of projects you would be supporting [via the portfolio here](/projects) or [via this Trello board.](https://trello.com/b/gODKGO1o/)
 
