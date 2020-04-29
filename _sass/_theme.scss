@@ -29,6 +29,11 @@
     }
 }
 
+// Lists on Pages
+.container li, ul {
+    word-wrap: normal;
+}
+
 // Site Header (_includes/site-header.html)
 .header {
     background: $accentColour;
