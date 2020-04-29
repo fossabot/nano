@@ -2,30 +2,63 @@
 @charset "utf-8";
 @import "config";
 
-// Light and Dark Themes for Mobile
+// Auto Light and Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: light) {
+    a { color: $LIGHTlinkColour; }
+    a:hover { color: $LIGHTlinkHoverColour; }
     html {
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
-    a {
-        color: $LIGHTlinkColour;
+    .lbl-toggle {
+        background: $LIGHTbgColour;
+        color: $LIGHTtextColour;
     }
-    a:hover {
-        color: $LIGHTlinkHoverColour;
-    }
+    .lbl-toggle:hover { color: $LIGHTlinkHoverColour; }
 }
 
 @media (prefers-color-scheme: dark) {
+    a { color: $DARKlinkColour; }
+    a:hover { color: $DARKlinkHoverColour; }
     html {
         background: $DARKbgColour;
         color: $DARKtextColour;
     }
-    a {
-        color: $DARKlinkColour;
+    .lbl-toggle {
+        background: $DARKbgColour;
+        color: $DARKtextColour;
     }
-    a:hover {
-        color: $DARKlinkHoverColour;
+    .lbl-toggle:hover { color: $DARKlinkHoverColour; }
+}
+
+// Mobile Nav and Other Optimizations
+@media only screen and (max-width: 600px) {
+    .lbl-toggle {
+        display: block !important;
+        border-radius: 1vh;
+        padding: .25em 1em 1em .25em;
+        transition: color 500ms;
+    }
+    nav input[type='checkbox']:checked ~ .links {
+        background: rgba(255,255,255,.2);
+        padding: 1em 1em;
+    }
+    .links {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 250ms ease-in-out;
+    }
+    .toggle:checked + .lbl-toggle + .links {
+        max-height: 100vh;
+    }
+    .navLink {
+        display: none;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 100%;
+    }
+    .navLink:hover {
+
     }
 }
 
@@ -67,6 +100,9 @@
     text-decoration: none;
     color: $navColour;
 }
+
+nav input[type='checkbox'] { display: none; }
+.lbl-toggle { display: none; }
 
 .navLink:hover { color: $navHoverColour; }
 

@@ -4,6 +4,8 @@
             {% if site.logo %}
                 <a href="{{ '/' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" /></a>
             {% endif %}
+            <input type="checkbox" id="collap-nav" class="toggle">
+            <label for="menu" class="lbl-toggle">Menu</label>
             <ul class="links">
                 {% for item in site.navigation %}
                     {% if item.url contains '://' %}
