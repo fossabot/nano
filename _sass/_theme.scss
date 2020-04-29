@@ -29,18 +29,13 @@
     }
 }
 
-// Mobile Optimizations
-@media screen and(max-height: 450px) {
-
-}
-
 // Site Header (_includes/site-header.html)
 .header {
     background: $accentColour;
     color: $headerTextColour;
     width: 100%;
     padding-bottom: 2em;
-    max-height: 300px;
+    max-height: 32.5vh;
 }
 
 .header h1 {
@@ -84,10 +79,7 @@
 
 // Site Footer (_includes/site-footer.html)
 
-.copyright {
-    font-size: .75em;
-}
-
+.copyright { font-size: .75em; }
 .copyright a { text-decoration: underline; }
 
 footer {
