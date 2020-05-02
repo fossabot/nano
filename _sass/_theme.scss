@@ -36,7 +36,7 @@
     .lbl-toggle {
         display: block !important;
         border-radius: 1vh;
-        padding: .25em 1em 1em .25em;
+        padding: .25em 1em .25em 1em;
         transition: color 500ms;
     }
     nav input[type='checkbox']:checked ~ .links {
@@ -96,7 +96,7 @@
 }
 
 .navLink {
-    padding: .25em 1em 1em .25em;
+    padding: .25em 1em .25em 1em;
     text-decoration: none;
     color: $navColour;
 }
