@@ -37,6 +37,7 @@
         display: block !important;
         border-radius: 1vh;
         padding: .25em 1em .25em 1em;
+        text-decoration: none;
         transition: color 500ms;
     }
     nav input[type='checkbox']:checked ~ .links {
@@ -44,8 +45,6 @@
         padding: 1em 1em;
     }
     .links {
-        max-height: 0px;
-        overflow: hidden;
         transition: max-height 250ms ease-in-out;
     }
     .toggle:checked + .lbl-toggle + .links {
@@ -53,8 +52,6 @@
     }
     .navLink {
         display: none;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
         width: 100%;
     }
     .navLink:hover {
@@ -153,3 +150,7 @@ a { transition: color 500ms; }
 hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
 html, body { height: 100%; width: 100%; }
+
+
+// Unsorted
+.newsText { text-decoration: none; }
