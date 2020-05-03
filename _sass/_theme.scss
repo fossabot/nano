@@ -10,6 +10,9 @@
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
+    .content img {
+        border: $borderSize $borderType $LIGHTborderColour;
+    }
     .lbl-toggle {
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
@@ -23,6 +26,9 @@
     html {
         background: $DARKbgColour;
         color: $DARKtextColour;
+    }
+    .content img {
+        border: $borderSize $borderType $DARKborderColour;
     }
     .lbl-toggle {
         background: $DARKbgColour;
@@ -55,9 +61,6 @@
     .navLink {
         display: none;
         width: 100%;
-    }
-    .navLink:hover {
-
     }
 }
 
