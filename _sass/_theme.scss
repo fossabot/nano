@@ -6,6 +6,10 @@
 @media (prefers-color-scheme: light) {
     a { color: $LIGHTlinkColour; }
     a:hover { color: $LIGHTlinkHoverColour; }
+    .highlight {
+        background: $LIGHTcodebgColour;
+        color: $LIGHTcodeColour;
+    }
     html {
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
@@ -23,6 +27,10 @@
 @media (prefers-color-scheme: dark) {
     a { color: $DARKlinkColour; }
     a:hover { color: $DARKlinkHoverColour; }
+    .highlight {
+        background: $DARKcodebgColour;
+        color: $DARKcodeColour;
+    }
     html {
         background: $DARKbgColour;
         color: $DARKtextColour;
@@ -152,11 +160,15 @@ body {
     width: 100%;
 }
 
+.highlight {
+    font-style: $codeFont;
+    padding: .5vh 1vh .5vh 1vh;
+}
+
 a { transition: color 500ms; }
 hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
 html, body { height: 100%; width: 100%; }
-
 
 // Unsorted
 .newsText { text-decoration: none; }
