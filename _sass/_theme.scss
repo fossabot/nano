@@ -30,7 +30,7 @@
     }
     .lbl-toggle:hover { color: $DARKlinkHoverColour; }
 }
-
+/*
 // Mobile Nav and Other Optimizations
 @media only screen and (max-width: 600px) {
     .lbl-toggle {
@@ -58,19 +58,20 @@
 
     }
 }
-
+*/
 // Site Header (_includes/site-header.html)
 .header {
     background: $accentColour;
     color: $headerTextColour;
     width: 100%;
     padding-bottom: 2em;
-    max-height: 32.5vh;
+    // max-height: 32.5vh;
 }
 
 .header h1 {
     font-weight: $font-regular;
-    font-size: calc(4vw + 4vh + 2vmin);
+    // font-size: calc(4vw + 4vh + 2vmin);
+    font-size: 4.5em;
 }
 
 // Site Navigation
@@ -151,6 +152,7 @@ hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
 html, body { height: 100%; width: 100%; }
 
-
+/*
 // Unsorted
 .newsText { text-decoration: none; }
+*/
