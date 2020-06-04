@@ -5,6 +5,10 @@ author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon.
 
+plingverify: "" # Pling/OpenDesktop verification. Leave blank to exclude.
+googleverify: "" # Google verificiation. Leave blank to exclude
+bingverify: "" # Bing Verification. Leave blank to exclude
+
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
   - title: Home

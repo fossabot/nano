@@ -12,6 +12,15 @@
         {% if site.favicon %}
             <link rel="shortcut icon" href="{{ site.favicon }}" />
         {% endif %}
+        {% if site.plingverify %}
+            <meta name="ocs-site-verification" content="{{ site.plingverify }}" />
+        {% endif %}
+        {% if site.googleverify %}
+            <meta name="google-site-verification" content="{{ site.googleverify }}" />
+        {% endif %}
+        {% if site.bingverify %}
+            <meta name="msvalidate.01" content="{{ site.bingverify }}" />
+        {% endif %}
     </head>
     <body>
         {{ content }}
