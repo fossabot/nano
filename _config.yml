@@ -9,6 +9,8 @@ plingverify: "" # Pling/OpenDesktop verification. Leave blank to exclude.
 googleverify: "" # Google verificiation. Leave blank to exclude
 bingverify: "" # Bing Verification. Leave blank to exclude
 
+disablejs: false # Don't turn this off if you don't know its purpose. Read more on this switch at https://github.com/doamatto/nano/wiki/Disable-JS
+
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
   - title: Home
