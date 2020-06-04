@@ -10,6 +10,7 @@ googleverify: "" # Google verificiation. Leave blank to exclude
 bingverify: "" # Bing Verification. Leave blank to exclude
 
 disablejs: false # Don't turn this off if you don't know its purpose. Read more on this switch at https://github.com/doamatto/nano/wiki/Disable-JS
+menuurl: "" # This is ignored if disablejs is set to false.
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar

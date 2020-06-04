@@ -5,8 +5,14 @@
                 <a href="{{ '/' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" /></a>
             {% endif %}
             <ul class="links">
-                <input type="checkbox" id="collap-nav" class="toggle">
-                <label for="menu" class="lbl-toggle">Menu</label>
+                {% if site.disablejs == false %}
+                    <input type="checkbox" id="collap-nav" class="toggle">
+                    <label for="menu" rel="Menu" class="lbl-toggle">Menu</label>
+                {% else %}
+                    <a href="{{site.menuurl}}">
+                        <label for="menu" rel="Menu" class="lbl-toggle">Menu</label>
+                    </a>
+                {% endif %}
                 {% for item in site.navigation %}
                     {% if item.url contains '://' %}
                         {% assign url = item.url %}
