@@ -9,7 +9,9 @@ Nano is a super lightweight Jekyll theme built to work great on all platforms, r
 <ul>
     {% for post in site.posts limit:3 %}
         <li>
-          <a class="newsLink" href="{{ post.url }}"><b>{{ post.title }}.</b></a> {{ post.excerpt }}
+          <a class="newsLink" href="{{ post.url }}"><b>{{ post.title }} ({{post.dateS}}).</b></a> {{ post.excerpt }}
         </li>
     {% endfor %}
 </ul>
+
+[See all posts](/newsroom)
