@@ -19,3 +19,5 @@ You can also use [`gem install nano-theme`](https://rubygems.org/gems/nano-theme
 ### Credits
 
 Many thanks to the Jekyll and RubyGems community for great documentation, allowing me to make this simply and swiftly.
+
+Big thanks to the StackOverflow community; they helped me find some nice CSS workarounds for some things (like missing images). I quoted the posts I used when I used them.
