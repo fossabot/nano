@@ -1,4 +1,11 @@
-// Main Colour
+// Code Block Colours
+$LIGHTcodeColour: #fff;
+$LIGHTcodebgColour: #353230;
+$DARKcodeColour: #fff;
+$DARKcodebgColour: #353230;
+$codeFont: 'IBM Plex Mono', monospace;;
+
+// Main Colours
 $LIGHTbgColour: #fff;
 $DARKbgColour: #000;
 $accentColour: #f62c43;
@@ -6,11 +13,17 @@ $accentColour: #f62c43;
 // Header Colours (also uses $accentColour)
 $headerTextColour: #000;
 
+// Image Borders
+$LIGHTborderColour: #000;
+$DARKborderColour: #fff;
+$borderType: solid;
+$borderSize: 2.5px;
+
 // Navigation Colours
 $navColour: #000;
 $navHoverColour: #fff;
 
-// Text Colour
+// Text Colours
 $LIGHTtextColour: #000;
 $LIGHTlinkColour: #000;
 $LIGHTlinkHoverColour: #f62c43;
@@ -28,4 +41,6 @@ $font-italic: italic;
 $breakColour: #fff;
 
 // Switch this to whatever font you need, local or remote
-@import url('https://rsms.me/inter/inter.css');
+// Default to local fonts to reduce requests to other sites
+@import url('https://rsms.me/inter/inter.css'); // Inter by RSMS
+@import url("https://use.typekit.net/wbp7otr.css"); // Plex Mono by IBM

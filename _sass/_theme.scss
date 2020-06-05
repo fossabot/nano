@@ -6,19 +6,76 @@
 @media (prefers-color-scheme: light) {
     a { color: $LIGHTlinkColour; }
     a:hover { color: $LIGHTlinkHoverColour; }
+    .highlight {
+        background: $LIGHTcodebgColour;
+        color: $LIGHTcodeColour;
+    }
     html {
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
+<<<<<<< HEAD
+=======
+    .content img {
+        border: $borderSize $borderType $LIGHTborderColour;
+    }
+    .lbl-toggle {
+        background: $LIGHTbgColour;
+        color: $LIGHTtextColour;
+    }
+    .lbl-toggle:hover { color: $LIGHTlinkHoverColour; }
+>>>>>>> 39919b7171ba3af977c3fd266169831502527d16
 }
 
 @media (prefers-color-scheme: dark) {
     a { color: $DARKlinkColour; }
     a:hover { color: $DARKlinkHoverColour; }
+    .highlight {
+        background: $DARKcodebgColour;
+        color: $DARKcodeColour;
+    }
     html {
         background: $DARKbgColour;
         color: $DARKtextColour;
     }
+<<<<<<< HEAD
+=======
+    .content img {
+        border: $borderSize $borderType $DARKborderColour;
+    }
+    .lbl-toggle {
+        background: $DARKbgColour;
+        color: $DARKtextColour;
+    }
+    .lbl-toggle:hover { color: $DARKlinkHoverColour; }
+}
+
+// Mobile Nav and Other Optimizations
+@media only screen and (max-width: 600px) {
+    .lbl-toggle {
+        display: block !important;
+        border-radius: 1vh;
+        padding: 1vh 2vh 1vh 2vh;
+        text-decoration: none;
+        transition: color 500ms;
+    }
+    nav input[type='checkbox']:checked ~ .links {
+        background: rgba(255,255,255,.2);
+        padding: 1em 1em;
+        height: 100vh;
+        width: 100vh;
+    }
+    .links {
+        transition: max-height 250ms ease-in-out;
+    }
+    .toggle:checked + .lbl-toggle + .links {
+        max-height: 100vh;
+    }
+    .navLink {
+        display: none;
+        width: 100%;
+    }
+>>>>>>> 39919b7171ba3af977c3fd266169831502527d16
 }
 
 // Site Header (_includes/site-header.html)
@@ -33,6 +90,7 @@
 .header h1 {
     font-weight: $font-regular;
     font-size: calc(4vw + 4vh + 2vmin);
+    margin: auto;
 }
 
 // Site Navigation
@@ -118,11 +176,17 @@ body {
     width: 100%;
 }
 
+.highlight {
+    font-style: $codeFont;
+    padding: .5vh 1vh .5vh 1vh;
+}
+
 a { transition: color 500ms; }
 hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
 html, body { height: 100%; width: 100%; }
 
+<<<<<<< HEAD
 // Images
 img:before {
     content: '';
@@ -132,3 +196,7 @@ img:before {
 // Unsorted
 .newsText { text-decoration: none; }
 
+=======
+// Unsorted
+.newsText { text-decoration: none; }
+>>>>>>> 39919b7171ba3af977c3fd266169831502527d16

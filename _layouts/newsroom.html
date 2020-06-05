@@ -9,7 +9,11 @@ layout: default
     <ul>
         {% for post in site.posts %}
             <li>
+<<<<<<< HEAD
               <p><a class="newsText" href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}).</b></a> {{ post.excerpt }}</p>
+=======
+              <p><a class="newsText" href="{{ post.url }}"><b>{{ post.title }} ({{ post.date | date: "%Y-%m-%d"}}).</b></a> {{ post.excerpt }}</p>
+>>>>>>> 39919b7171ba3af977c3fd266169831502527d16
             </li>
         {% endfor %}
     </ul>
