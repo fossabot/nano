@@ -10,11 +10,6 @@
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
-    .lbl-toggle {
-        background: $LIGHTbgColour;
-        color: $LIGHTtextColour;
-    }
-    .lbl-toggle:hover { color: $LIGHTlinkHoverColour; }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,36 +18,6 @@
     html {
         background: $DARKbgColour;
         color: $DARKtextColour;
-    }
-    .lbl-toggle {
-        background: $DARKbgColour;
-        color: $DARKtextColour;
-    }
-    .lbl-toggle:hover { color: $DARKlinkHoverColour; }
-}
-
-// Mobile Nav and Other Optimizations
-@media only screen and (max-width: 600px) {
-    .lbl-toggle {
-        display: block !important;
-        border-radius: 1vh;
-        padding: .25em 1em .25em 1em;
-        text-decoration: none;
-        transition: color 500ms;
-    }
-    nav input[type='checkbox']:checked ~ .links {
-        background: rgba(255,255,255,.2);
-        padding: 1em 1em;
-    }
-    .links {
-        transition: max-height 250ms ease-in-out;
-    }
-    .toggle:checked + .lbl-toggle + .links {
-        max-height: 100vh;
-    }
-    .navLink {
-        display: none;
-        width: 100%;
     }
 }
 
@@ -71,34 +36,44 @@
 }
 
 // Site Navigation
-.nav_logo {
-    width: 4em;
+#menu {
+    display: block;
+    left: 50px;
+    position: relative;
+    top: 50px;
+    user-select:none;
+    z-index: 1;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+#menu input {
+    cursor: pointer;
+    display: block;
+    left: -5px;
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    z-index: 2;
 }
 
 .links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    list-style: none;
+    background: $DARKbgColour;
+    list-style-type: none;
+    margin: -100px 0 0 -50px;
+    padding: 50px, auto, auto, 125px;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transform-origin: 0% 0%;
+    transition: transform 500ms cubic-bezier(0.77,0.2,0.05,1.0);
+    width: 300px;
 }
 
 .navLink {
-    padding: .25em 1em .25em 1em;
+    padding: 10px 0;
     text-decoration: none;
-    color: $navColour;
+    transition: color 200ms ease;
 }
 
-nav input[type='checkbox'] { display: none; }
-.lbl-toggle { display: none; }
-
-.navLink:hover { color: $navHoverColour; }
+.navLink:hover { color: #f62c43; }
 
 // Site Content (_layouts/page[-notitle].html)
 
@@ -148,6 +123,12 @@ hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
 html, body { height: 100%; width: 100%; }
 
+// Images
+img:before {
+    content: '';
+    display: none;
+} // Hack from https://stackoverflow.com/a/980948
 
 // Unsorted
 .newsText { text-decoration: none; }
+

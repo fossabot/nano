@@ -4,16 +4,19 @@
             {% if site.logo %}
                 <a href="{{ '/' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" /></a>
             {% endif %}
-            <ul class="links">
-                {% for item in site.navigation %}
-                    {% if item.url contains '://' %}
-                        {% assign url = item.url %}
-                    {% else %}
-                        {% assign url = item.url | relative_url %}
-                    {% endif %}
-                    <li> <a class="navLink" href="{{url}}">{{item.title}}</a> </li>
-                {% endfor %}
-            </ul>
+            <div id="menu">
+                <input type="checkbox" />
+                <ul class="links">
+                    {% for item in site.navigation %}
+                        {% if item.url contains '://' %}
+                            {% assign url = item.url %}
+                        {% else %}
+                            {% assign url = item.url | relative_url %}
+                        {% endif %}
+                        <li> <a class="navLink" href="{{url}}">{{item.title}}</a> </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </nav>
         {% if site.tagline %}
             <div class="center">
