@@ -1,30 +1,30 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="{{site.lang}}">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
-        <meta name="referrer" content="no-referrer, same-origin">
-        <title>{{ page.title }} - {{ site.title }}</title>
-        <meta property="og:title" content="{{page.title}} - {{site.title}}" />
-        <meta name="description" content="{{page.description}}" />
-        <meta property="og:description" content="{{page.description}}" />
-        <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
-        {% if site.favicon %}
-            <link rel="shortcut icon" href="{{ site.favicon }}" />
-        {% endif %}
-        {% if site.plingverify %}
-            <meta name="ocs-site-verification" content="{{ site.plingverify }}" />
-        {% endif %}
-        {% if site.googleverify %}
-            <meta name="google-site-verification" content="{{ site.googleverify }}" />
-        {% endif %}
-        {% if site.bingverify %}
-            <meta name="msvalidate.01" content="{{ site.bingverify }}" />
-        {% endif %}
-    </head>
-    <body>
-        {{ content }}
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="referrer" content="no-referrer, same-origin">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta property="og:title" content="{{page.title}} - {{site.title}}">
+    <meta name="description" content="{{page.description}}">
+    <meta property="og:description" content="{{page.description}}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    {% if site.favicon %}
+      <link rel="shortcut icon" href="{{ site.favicon }}">
+    {% endif %}
+    {% if site.plingverify %}
+      <meta name="ocs-site-verification" content="{{ site.plingverify }}">
+    {% endif %}
+    {% if site.googleverify %}
+      <meta name="google-site-verification" content="{{ site.googleverify }}">
+    {% endif %}
+    {% if site.bingverify %}
+      <meta name="msvalidate.01" content="{{ site.bingverify }}">
+    {% endif %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
 </html>

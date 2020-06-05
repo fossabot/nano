@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="nav">
             {% if site.logo %}
-                <a href="{{ '/' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" /></a>
+                <a href="{{ '/' | relative_url }}"><img class="nav_logo" src="{{site.logo}}" alt="Home" /></a>
             {% endif %}
             <div id="menu">
                 <input type="checkbox" />
@@ -13,7 +13,7 @@
                         {% else %}
                             {% assign url = item.url | relative_url %}
                         {% endif %}
-                        <li> <a class="navLink" href="{{url}}">{{item.title}}</a> </li>
+                        <li> <a class="nav-link" href="{{url}}">{{item.title}}</a> </li>
                     {% endfor %}
                 </ul>
             </div>
