@@ -5,6 +5,10 @@ author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon.
 
+font-import: 
+  - "https://cdn.doamatto.xyz/inter.min.css" # URL to font for importing
+  - "https://cdn.doamatto.xyz/ibm.min.css" # URL to font for importing
+
 alexaverify: "" # Alexa verification. Leave blank to exclude.
 bingverify: "" # Bing Verification. Leave blank to exclude.
 dailyverify: "" # DailyMotion Verification. Leave blank to exlcude.

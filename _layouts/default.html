@@ -10,6 +10,9 @@
     <meta property="og:title" content="{{page.title}} - {{site.title}}">
     <meta name="description" content="{{page.description}}">
     <meta property="og:description" content="{{page.description}}">
+    {% for item in site.font-import %}
+      <link rel="stylesheet" href="{{item.url}}">
+    {% endfor %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% if site.favicon %}
       <link rel="shortcut icon" href="{{ site.favicon }}">

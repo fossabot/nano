@@ -35,12 +35,10 @@ $DARKnewsLinkColour: #f62c43;
 
 // Typography & Misc.
 $font: 'Inter', sans-serif;
+$font-var: 'Inter var', sans-serif;
 $font-regular: 400;
 $font-bold: 700;
 $font-italic: italic;
 $breakColour: #fff;
 
-// Switch this to whatever font you need, local or remote
-// Default to local fonts to reduce requests to other sites
-@import url('https://rsms.me/inter/inter.css'); // Inter by RSMS
-@import url("https://use.typekit.net/wbp7otr.css"); // Plex Mono by IBM
+// Font imports were moved to ../_config.yml
