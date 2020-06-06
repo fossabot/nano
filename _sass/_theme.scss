@@ -4,8 +4,11 @@
 
 // Auto Light and Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: light) {
-  a { color: $LIGHTlinkColour; }
-  a:hover { color: $LIGHTlinkHoverColour; }
+  a { 
+    color: $LIGHTlinkColour; 
+
+    :hover { color: $LIGHTlinkHoverColour; }
+  }
   .highlight {
     background: $LIGHTcodebgColour;
     color: $LIGHTcodeColour;
@@ -17,8 +20,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  a { color: $DARKlinkColour; }
-  a:hover { color: $DARKlinkHoverColour; }
+  a { 
+    color: $DARKlinkColour; 
+    
+    :hover { color: $DARKlinkHoverColour; }
+  }
   .highlight {
     background: $DARKcodebgColour;
     color: $DARKcodeColour;
@@ -37,13 +43,14 @@
   color: $headerTextColour;
   padding-bottom: 2em;
   max-height: 32.5vh;
-}
 
-.header h1 {
-  margin: auto;
+  h1 {
+    margin: auto;
+  
+    font-weight: $font-regular;
+    font-size: calc(4vw + 4vh + 2vmin);
 
-  font-weight: $font-regular;
-  font-size: calc(4vw + 4vh + 2vmin);
+  }
 }
 
 // Site Navigation
@@ -56,18 +63,18 @@
   display: block;
 
   user-select: none;
-}
 
-#menu input {
-  position: absolute;
-  top: -7px;
-  z-index: 2;
-  left: -5px;
-
-  display: block;
-
-  cursor: pointer;
-  opacity: 0;
+  input {
+    position: absolute;
+    top: -7px;
+    z-index: 2;
+    left: -5px;
+  
+    display: block;
+  
+    cursor: pointer;
+    opacity: 0;
+  }
 }
 
 .links {
@@ -90,9 +97,9 @@
 
   padding-top: 10px;
   transition: color 200ms ease;
-}
 
-.nav-link:hover { color: $accentColour; }
+  :hover { color: $accentColour; }
+}
 
 // Site Content (_layouts/page[-notitle].html)
 
@@ -103,8 +110,10 @@
 
 // Site Footer (_includes/site-footer.html)
 
-.copyright { font-size: .75em; }
-.copyright a { text-decoration: underline; }
+.copyright { 
+  font-size: .75em; 
+  a { text-decoration: underline; }
+}
 
 footer {
   display: flex;
@@ -122,7 +131,7 @@ body {
   font-size: 1.125em;
   
   @supports (font-variation-settings: normal) {
-    body { font-family: $font-var; }
+    font-family: $font-var;
   }
 
   margin: -20px 0px 8px 0px;
@@ -146,10 +155,10 @@ body {
 }
 
 .highlight {
-  font-style: $codeFont;
+  font-family: $codeFont;
   
   @supports (font-variation-settings: normal) {
-    font-style: $codeFont-var;
+    font-family: $codeFont-var;
   }
 
   padding: .5vh 1vh .5vh 1vh;
