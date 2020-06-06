@@ -120,12 +120,12 @@ body {
   font-family: $font;
   font-weight: $font-regular;
   font-size: 1.125em;
+  
+  @supports (font-variation-settings: normal) {
+    body { font-family: $font-var; }
+  }
 
   margin: -20px 0px 8px 0px;
-}
-
-@supports (font-variation-settings: normal) {
-  html { font-family: $font-var; }
 }
 
 .container {
@@ -147,6 +147,10 @@ body {
 
 .highlight {
   font-style: $codeFont;
+  
+  @supports (font-variation-settings: normal) {
+    font-style: $codeFont-var;
+  }
 
   padding: .5vh 1vh .5vh 1vh;
 }
