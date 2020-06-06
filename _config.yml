@@ -5,9 +5,16 @@ author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon.
 
+alexaverify: "" # Alexa verification. Leave blank to exclude.
+bingverify: "" # Bing Verification. Leave blank to exclude.
+dailyverify: "" # DailyMotion Verification. Leave blank to exlcude.
+googleverify: "" # Google verificiation. Leave blank to exclude.
+nortonverify: "" # Norton verification. Leave blank to exclude.
+specificverify: "" # SpecificFeeds verification. Leave blank to exclude.
+pinverify: "" # Pinterest verification. Leave blank to exclude.
 plingverify: "" # Pling/OpenDesktop verification. Leave blank to exclude.
-googleverify: "" # Google verificiation. Leave blank to exclude
-bingverify: "" # Bing Verification. Leave blank to exclude
+wotverify: "" # World of Trust verification. Leave blank to exclude.
+yandexverify: "" # Yandex verification. Leave blank to exclude.
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar

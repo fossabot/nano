@@ -13,15 +13,26 @@
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% if site.favicon %}
       <link rel="shortcut icon" href="{{ site.favicon }}">
-    {% endif %}
-    {% if site.plingverify %}
+    {% elsif site.plingverify %}
       <meta name="ocs-site-verification" content="{{ site.plingverify }}">
-    {% endif %}
-    {% if site.googleverify %}
+    {% elsif site.googleverify %}
       <meta name="google-site-verification" content="{{ site.googleverify }}">
-    {% endif %}
-    {% if site.bingverify %}
+    {% elsif site.bingverify %}
       <meta name="msvalidate.01" content="{{ site.bingverify }}">
+    {% elsif site.pinverify %}
+      <meta name="p:domain_verify" content="{{ site.pinverify }}">
+    {% elsif site.dailyverify %}
+      <meta name="dailymotion-domain-verification" content="{{ site.dailyverify }}">
+    {% elsif site.yandexverify %}
+      <meta name="yandex-verification" content="{{ site.yandexverify }}">
+    {% elsif site.nortonverify %}
+      <meta name="norton-safeweb-site-verification" content="{{ site.nortonverify">
+    {% elsif site.alexaverify %}
+      <meta name="alexaVerifyID" content="{{ site.alexaverify }}">
+    {% elsif site.wotverify %}
+      <meta name="wot-verification" content="{{ site.wotverify }}">
+    {% elsif site.specificverify %}
+      <meta name="specificfeeds-verification-code" content="{{ site.specificverify }}">
     {% endif %}
   </head>
   <body>
