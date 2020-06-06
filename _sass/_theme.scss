@@ -1,6 +1,5 @@
 // Import configuration
-@charset "utf-8";
-@use "config";
+@import "config";
 
 // Auto Light and Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: light) {
