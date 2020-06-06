@@ -124,6 +124,10 @@ body {
   margin: -20px 0px 8px 0px;
 }
 
+@supports (font-variation-settings: normal) {
+  html { font-family: $font-var; }
+}
+
 .container {
   max-width: 40em;
 
