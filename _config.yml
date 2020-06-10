@@ -22,6 +22,8 @@ plingverify: "" # Pling/OpenDesktop verification. Leave blank to exclude.
 wotverify: "" # World of Trust verification. Leave blank to exclude.
 yandexverify: "" # Yandex verification. Leave blank to exclude.
 
+simpleanalytics: false # Don't enable if you don't know what this does
+
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
   - title: Home
