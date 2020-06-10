@@ -9,9 +9,13 @@ layout: default
 </div>
 
 {% if simpleanalytics == true %}
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
 /></noscript>
+{% elsif fathomcustom == true %}
+<script src="{{site.fathomcustom}}" site="{{site.fathomsite}}" honor-dnt="true" defer></script>
+{% elsif fathomanalytics == true %}
+<script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" defer></script>
 {% endif %}
 
 {% include site-footer.html %}
