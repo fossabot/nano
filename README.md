@@ -1,6 +1,6 @@
 # Nano
 
-[![Gem Version](https://badge.fury.io/rb/nano-theme.svg)](https://badge.fury.io/rb/nano-theme)
+[![Gem Version](https://badge.fury.io/rb/nano-theme.svg)](https://badge.fury.io/rb/nano-theme) ![Gem downloads](https://img.shields.io/gem/dt/nano-theme)
 
 **This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
 
