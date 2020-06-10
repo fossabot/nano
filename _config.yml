@@ -26,6 +26,9 @@ simpleanalytics: false # Don't enable if you don't know what this does
 fathomanalytics: false # Don't enable if you don't know what this does
 fathomsite: "" # This is the site ID/name that you're supposed to use as the site attribute on the script
 fathomcustom: "" # Make sure this points to the Fathom script directly. Only for use with custom domains on Fathom
+matomoanalytics: false # Don't enable if you don't know what this does
+matomositeid: "" # Your site ID (you can find this in the Matomo dashboard)
+matomourl: "" # Your Matomo instance (you can find this in the Matomo dashboard); do not include 'https://' or a trailing '/'
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
