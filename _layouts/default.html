@@ -1,5 +1,9 @@
 <!doctype html>
-<html lang="{{site.lang}}">
+{% if site.lang %}
+  <html lang="{{site.lang}}">
+{% else %}
+  <html>
+{% endif %}
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,8 +12,18 @@
     <meta name="referrer" content="no-referrer, same-origin">
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta property="og:title" content="{{page.title}} - {{site.title}}">
-    <meta name="description" content="{{page.description}}">
-    <meta property="og:description" content="{{page.description}}">
+    {% if site.lang %}
+      <meta property="og:locale" content="{{site.lang}}">
+    {% endif %}
+    {% if page.description %}
+      <meta name="description" content="{{page.description}}">
+      <meta property="og:description" content="{{page.description}}">
+      <meta name="twitter:description" content="{{page.description}}">
+    {% elsif site.description %}
+      <meta name="description" content="{{site.description}}">
+      <meta property="og:description" content="{{site.description}}">
+      <meta name="twitter:description" content="{{site.description}}">
+    {% endif %}
     {% for item in site.font-import %}
       <link rel="stylesheet" href="{{item.url}}">
     {% endfor %}
@@ -36,9 +50,6 @@
       <meta name="wot-verification" content="{{ site.wotverify }}">
     {% elsif site.specificverify %}
       <meta name="specificfeeds-verification-code" content="{{ site.specificverify }}">
-    {% endif %}
-    {% if site.disablejs == false %}
-      <script src="{{site.baseurl}}/assets/nav.js"></script>
     {% endif %}
   </head>
   <body>
