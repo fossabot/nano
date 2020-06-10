@@ -1,6 +1,8 @@
+# For help setting up Nano, go to https://github.com/doamatto/nano/wiki
+
 lang: en-GB # Site language
 title: "Nano" # Site name; SEO
-description: "" # Site description; SEO
+description: "Nano is a lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds." # Site description; SEO
 author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon
@@ -19,9 +21,6 @@ pinverify: "" # Pinterest verification. Leave blank to exclude.
 plingverify: "" # Pling/OpenDesktop verification. Leave blank to exclude.
 wotverify: "" # World of Trust verification. Leave blank to exclude.
 yandexverify: "" # Yandex verification. Leave blank to exclude.
-
-disablejs: false # This will break the navigation system a lot. Make sure you set a new directive for navigation below.
-navbtnurl: "" # This will be ignored if "disablejs" is set to "false"
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
