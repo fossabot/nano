@@ -5,15 +5,17 @@ layout: default
 {% include site-header.html %}
 
 <div class="container">
-    <h2>Newsroom</h2>
-    <ul>
-        {% for post in site.posts %}
-            <li>
-              <p><a class="news-text" href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}).</b></a> {{ post.excerpt }}</p>
-            </li>
-        {% endfor %}
-    </ul>
-    {{ content }}
+  {{ content }}
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <p>
+          <a class="news-text" href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}).</b></a>
+          {{ post.excerpt }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 {% include site-footer.html %}
