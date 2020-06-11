@@ -8,17 +8,10 @@ layout: default
     {{ content }}
 </div>
 
-{% if simpleanalytics == true %}
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
-/></noscript>
-{% elsif fathomanalytics == true %}
-  {if fathomcustom == true %}
-    <script src="{{site.fathomcustom}}" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
-  {% else %}
-    <script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
-  {% endif %}
-{% elsif matomoanalytics == true %}
+{% if site.simpleanalytics == true %}
+  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""></noscript>
+{% elsif site.matomoanalytics == true %}
   <!-- Matomo -->
     <script type="text/javascript">
       var _paq = window._paq || [];
@@ -39,5 +32,8 @@ layout: default
   <!-- End Matomo Code -->
 {% endif %}
 
+{% if site.fathomanalytics == true %}
+  <script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+{% endif %}
 
 {% include site-footer.html %}
