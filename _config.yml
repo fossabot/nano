@@ -32,12 +32,10 @@ matomourl: "" # Your Matomo instance (you can find this in the Matomo dashboard)
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar
-  - title: Home
-    url: /
-  - title: About Nano
+  - title: About
     url: /about-nano/
-  - title: About Dev
-    url: /about/
+  - title: Docs
+    url: "https://github.com/doamatto/nano/wiki"
 
 webSource: "https://github.com/doamatto/nano" # Contribution Link
 copyrightName: [ "doamatto" ] # Text for after copyright
