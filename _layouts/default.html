@@ -25,7 +25,7 @@
       <meta name="twitter:description" content="{{site.description}}">
     {% endif %}
     {% for item in site.font-import %}
-      <link rel="stylesheet" href="{{item.url}}">
+      <link rel="stylesheet" href="{{item}}">
     {% endfor %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% if site.favicon %}
