@@ -1,10 +1,8 @@
 // Code Block Colours
 $LIGHTcodeColour: #fff;
-$LIGHTcodebgColour: #353230;
 $DARKcodeColour: #fff;
+$LIGHTcodebgColour: #353230;
 $DARKcodebgColour: #353230;
-$codeFont: 'IBM Plex Mono', monospace;
-$codeFont-var: '';
 
 // Main Colours
 $LIGHTbgColour: #fff;
@@ -21,25 +19,22 @@ $borderType: solid;
 $borderSize: 2.5px;
 
 // Navigation Colours
-$navcolour: #000;
-$navhovercolour: #f62c43;
+$navColour: #000;
 
 // Text Colours
 $LIGHTtextColour: #000;
+$DARKtextColour: #fff;
 $LIGHTlinkColour: #000;
 $LIGHTlinkHoverColour: #f62c43;
-$DARKtextColour: #fff;
 $DARKlinkColour: #fff;
 $DARKlinkHoverColour: #f62c43;
-$LIGHTnewsLinkColour: #f62c43;
-$DARKnewsLinkColour: #f62c43;
 
 // Typography & Misc.
+$codeFont: 'IBM Plex Mono', monospace;
+$codeFont-var: 'IBM Plex Mono', monospace; // Might break if nothing is here
 $font: 'Inter', sans-serif;
-$font-var: 'Inter var', sans-serif;
+$font-var: 'Inter', sans-serif; // Might break if nothing is here
 $font-regular: 400;
 $font-bold: 700;
-$font-italic: italic;
-$breakColour: #fff;
 
 // Font imports were moved to ../_config.yml
