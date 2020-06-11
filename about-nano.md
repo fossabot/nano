@@ -3,6 +3,8 @@ layout: page
 title: About Nano
 ---
 
+# {{page.title}}
+
 Nano is a super lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds.
 
 ### Installation

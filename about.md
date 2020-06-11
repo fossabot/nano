@@ -3,6 +3,8 @@ layout: page
 title: About doamatto
 ---
 
+# {{page.title}}
+
 Based in California, I'm a high school student who works on making tools for people, not products. I strive to give people tools that empower them to do amazing things. To empower people there's two things that I'm always consistent with from tool to tool: the way a user interacts with the tool is simple, but powerful and that privacy is given by default.
 
 I have skills in **graphic design**, **software development**, **web development**, and **audio and video editing**. I’m picking up **3D modeling** and **visual effects**. I've had an interest in homelabbing, server coalitions, Linux, iPods, and jailbreaking/rooting. The projects page, [which can be viewed here](/projects), has plenty of links on archived, current, and concept projects.
