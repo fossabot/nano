@@ -40,19 +40,24 @@ body {
 // Typography
 @media only screen and (max-device-width: 480px) {
   h1 {
-    font-size: 40px;
+    font-size: 32px !important;
   }
 
   h2 {
-    font-size: 21px;
-    letter-spacing: 0;
+    font-size: 21px !important;
   }
 
   h3 {
-    font-size: 17px;
+    font-size: 19px !important;
   }
 
-  h4, h5, h6 { font-size: 16px; }
+  .post {
+    h3 {
+      font-size: 14px !important;
+    }
+  }
+
+  h4, h5, h6 { font-size: 16px !important; }
   .tagline { font-size: 40px !important; }
 }
 
@@ -108,11 +113,9 @@ header {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  width: 100%;
-  max-width: 100vh;
   cursor: default;
   background: $accentColour;
-  padding: 0 16px;
+  padding-left: 16px;
   * {
     cursor: default;
     font-size: 14px;
@@ -148,6 +151,7 @@ nav {
     flex: 0 0 auto;
     text-align: left;
     display: flex;
+    margin-top: 2.5em;
     li {
       list-style: none;
       margin: 0;
@@ -178,13 +182,10 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 100%;
-  max-width: 100vh;
   background: $accentColour;
   color: $headerTextColour;
   padding-bottom: 2em;
   padding-left: 32px;
-  padding-right: 32px;
   max-height: 32.5vh;
 
   p {
@@ -223,8 +224,6 @@ footer {
 
 // Main Content
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
   max-width: 40em;
   width: 100%;
   margin: 1em 1em 1em 1em;
@@ -239,6 +238,13 @@ img {
   } // Hack from https://stackoverflow.com/a/980948
 }
 
+// Blog Posts
+.post {
+  h3 {
+    font-size: 14px !important;
+  }
+}
+
 // Auto Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: dark) {
   a { 
@@ -249,7 +255,7 @@ img {
     background: $DARKcodebgColour;
     color: $DARKcodeColour;
   }
-  html {
+  body {
     background: $DARKbgColour;
     color: $DARKtextColour;
   }
