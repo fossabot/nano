@@ -226,17 +226,18 @@ footer {
 // Main Content
 .container {
   max-width: 40em;
-  width: 100%;
   margin: 1em 1em 1em 1em;
   ul, ol {
     margin-left: 2em !important;
-    margin-right: 2em !important;
+    margin-right: 24px !important;
   }
-  p {
-    margin-right: 2em !important;
+  .highlight, p, hr, h1, h2, h3 {
+    margin-left: 1em !important;
+    margin-right: 24px !important;
   }
   @media only screen and (max-device-width: 480px) {
     max-width: 100% !important;
+    margin: 1em .5em 1em 1em;
   }
 }
 
