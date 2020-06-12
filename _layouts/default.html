@@ -30,25 +30,26 @@
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% if site.favicon %}
       <link rel="shortcut icon" href="{{ site.favicon }}">
-    {% elsif site.plingverify %}
+    {% endif %}
+    {% if site.plingverify %}
       <meta name="ocs-site-verification" content="{{ site.plingverify }}">
-    {% elsif site.googleverify %}
+    {% endif %} {% if site.googleverify %}
       <meta name="google-site-verification" content="{{ site.googleverify }}">
-    {% elsif site.bingverify %}
+    {% endif %} {% if site.bingverify %}
       <meta name="msvalidate.01" content="{{ site.bingverify }}">
-    {% elsif site.pinverify %}
+    {% endif %} {% if site.pinverify %}
       <meta name="p:domain_verify" content="{{ site.pinverify }}">
-    {% elsif site.dailyverify %}
+    {% endif %} {% if site.dailyverify %}
       <meta name="dailymotion-domain-verification" content="{{ site.dailyverify }}">
-    {% elsif site.yandexverify %}
+    {% endif %} {% if site.yandexverify %}
       <meta name="yandex-verification" content="{{ site.yandexverify }}">
-    {% elsif site.nortonverify %}
+    {% endif %} {% if site.nortonverify %}
       <meta name="norton-safeweb-site-verification" content="{{ site.nortonverify }}">
-    {% elsif site.alexaverify %}
+    {% endif %} {% if site.alexaverify %}
       <meta name="alexaVerifyID" content="{{ site.alexaverify }}">
-    {% elsif site.wotverify %}
+    {% endif %} {% if site.wotverify %}
       <meta name="wot-verification" content="{{ site.wotverify }}">
-    {% elsif site.specificverify %}
+    {% endif %} {% if site.specificverify %}
       <meta name="specificfeeds-verification-code" content="{{ site.specificverify }}">
     {% endif %}
   </head>
