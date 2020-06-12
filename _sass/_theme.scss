@@ -86,7 +86,7 @@ ol, ul {
   margin: 2em 1em;
 }
 
-a { 
+a, ul a, ol a { 
   color: $LIGHTlinkColour; 
   text-decoration: none;
   :hover {
@@ -260,8 +260,8 @@ img {
 
 // Auto Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: dark) {
-  a { 
-    color: $DARKlinkColour; 
+  a, ul a, ol a { 
+    color: $DARKlinkColour;
     :hover { color: $DARKlinkHoverColour; }
   }
   .highlight {
