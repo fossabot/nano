@@ -277,3 +277,10 @@ img {
     color: $DARKcodeColour;
   }
 }
+
+// Make pixel trackers invisible
+.pxl {
+  width: 1px;
+  height: 1px;
+  border: none;
+}
