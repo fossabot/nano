@@ -6,10 +6,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if site.customfathomurl == "" %}
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-dHJrVt+kLS/cDc8A5Vj0E10IDYfISi62wQwoW8mr8c4=' https://cdn.usefathom.com https://scripts.simpleanalyticscdn.com https://cdn.matomo.cloud">
+    {% if site.simpleanalytics == true %}
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://scripts.simpleanalyticscdn.com/latest.js">
+    {% elsif site.fathomanalytics == true %}
+      {% if site.customfathomurl == "" %}
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.usefathom.com/script.js">
+      {% else %}
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://{{site.customfathomurl}}">
+      {% endif %}
+    {% elsif site.matomoanalytics %}
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qj/jwzjem2sfrDp/CEX8ODDzwfezTtpX43MRAcQTuUQ=' https://cdn.matomo.cloud/{{site.matomourl}}/matomo.js">
     {% else %}
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-dHJrVt+kLS/cDc8A5Vj0E10IDYfISi62wQwoW8mr8c4=' https://cdn.usefathom.com https://scripts.simpleanalyticscdn.com https://cdn.matomo.cloud https://{{site.customfathomurl}}">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
     {% endif %}
     <meta name="referrer" content="no-referrer, same-origin">
     <title>{{ page.title }} - {{ site.title }}</title>
