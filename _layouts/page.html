@@ -8,15 +8,16 @@ layout: default
   {{ content }}
 </div>
 {% if site.simpleanalytics == true %}
-  <p>
-     <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" class="pxl">
-  </p>
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript>
+  <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="">
+</noscript>
 {% elsif site.matomoanalytics == true %}
-  <p>
-    <img src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" class="pxl">
-  </p>
+<p>
+  <img src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" class="pxl">
+</p>
 {% elsif site.fathomanalytics == true %}
-  <script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+<script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
 {% endif %}
 
 {% include site-footer.html %}
