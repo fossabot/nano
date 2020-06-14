@@ -1,4 +1,4 @@
-<!doctype html>{% if site.lang %}
+<!doctype html>{% if site.lang != "" %}
 <html lang="{{site.lang}}">
 {% else %}
 <html>
@@ -6,20 +6,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site.customfathomurl == "" %}
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-dHJrVt+kLS/cDc8A5Vj0E10IDYfISi62wQwoW8mr8c4=' https://cdn.usefathom.com https://scripts.simpleanalyticscdn.com https://cdn.matomo.cloud">
+    {% else %}
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-dHJrVt+kLS/cDc8A5Vj0E10IDYfISi62wQwoW8mr8c4=' https://cdn.usefathom.com https://scripts.simpleanalyticscdn.com https://cdn.matomo.cloud https://{{site.customfathomurl}}">
+    {% endif %}
     <meta name="referrer" content="no-referrer, same-origin">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang %}
+    <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang != "" %}
     <meta property="og:locale" content="{{site.lang}}">
-    {% endif %}{% if page.description %}
+    {% endif %}{% if page.description != "" %}
     <meta name="description" content="{{page.description}}">
     <meta property="og:description" content="{{page.description}}">
-    <meta name="twitter:description" content="{{page.description}}">{% elsif site.description %}<meta name="description" content="{{site.description}}">
+    <meta name="twitter:description" content="{{page.description}}">{% elsif site.description != "" %}<meta name="description" content="{{site.description}}">
     <meta property="og:description" content="{{site.description}}">
     <meta name="twitter:description" content="{{site.description}}">{% endif %}{% for item in site.font-import %}
     <link rel="stylesheet" href="{{item}}">{% endfor %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}">{% endif %}{% if site.plingverify != "" %}
+    {% if site.favicon != "" %}<link rel="shortcut icon" href="{{ site.favicon }}">{% endif %}{% if site.plingverify != "" %}
     <meta name="ocs-site-verification" content="{{ site.plingverify }}">
     {% endif %}{% if site.googleverify != "" %}
     <meta name="google-site-verification" content="{{ site.googleverify }}">
