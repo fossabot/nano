@@ -62,7 +62,7 @@ body {
   .tagline { font-size: 40px !important; }
 }
 
-.bold { font-weight: $font-bold; } // Jekyll will process bold text to have the "bold" class
+.bold { font-weight: $font-bold !important; } // Jekyll will process bold text to have the "bold" class
 
 p { margin: 1em 0; }
 
@@ -188,11 +188,10 @@ nav {
   padding: 1.5em 32px;
   max-height: 30vh;
 
-  p {
+  p, .bold {
     flex: 0 0 auto;
     margin: 0 16px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 
     font-size: 80px;
