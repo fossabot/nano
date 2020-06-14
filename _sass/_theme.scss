@@ -190,7 +190,7 @@ nav {
 
   p, .bold {
     flex: 0 0 auto;
-    margin: 0 16px;
+    margin: auto 16px;
     display: flex;
     justify-content: center;
 
@@ -224,7 +224,7 @@ footer {
 
 // Main Content
 .container {
-  max-width: 40em;
+  width: 75vw;
   margin: 1em auto;
   ul, ol {
     margin-left: 2em !important;
@@ -237,6 +237,7 @@ footer {
   @media only screen and (max-device-width: 480px) {
     max-width: 100% !important;
     margin: 1em 1em 1em 1em;
+    width: auto !important;
   }
   hr { margin-bottom: 1em; }
 }
