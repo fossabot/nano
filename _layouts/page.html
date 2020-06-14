@@ -7,40 +7,7 @@ layout: default
 <div class="container">
   {{ content }}
 </div>
-<!-- Analytics Start -->
-{% if site.simpleanalytics == true %}
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript>
-  <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" class="pxl">
-</noscript>
-{% elsif site.matomoanalytics == true %}
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(["disableCookies"]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://{{site.matomourl}}/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '{{site.matomositeid}}']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cdn.matomo.cloud/{{site.matomourl}}/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript>
-  <p>
-    <img src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" class="pxl">
-  </p>
-</noscript>
-{% elsif site.fathomanalytics == true %}
-{% if site.customfathomurl != "" %}
-<script src="https://{{site.customfathomurl}}" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
-{% else %}
-<script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
-{% endif %}
-{% endif %}
-<!-- Analytics End -->
+
+{% include analytics.html %}
 
 {% include site-footer.html %}
