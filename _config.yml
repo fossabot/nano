@@ -25,6 +25,7 @@ yandexverify: "" # Yandex verification. Leave blank to exclude.
 simpleanalytics: false # Don't enable if you don't know what this does
 fathomanalytics: false # Don't enable if you don't know what this does
 fathomsite: "" # This is the site ID/name that you're supposed to use as the site attribute on the script
+customfathomurl: "" # Make sure this is the direct url to the script for Fathom Analytics; do not include 'https://'
 matomoanalytics: false # Don't enable if you don't know what this does
 matomositeid: "" # Your site ID (you can find this in the Matomo dashboard)
 matomourl: "" # Your Matomo instance (you can find this in the Matomo dashboard); do not include 'https://' or a trailing '/'

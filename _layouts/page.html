@@ -34,7 +34,11 @@ layout: default
   </p>
 </noscript>
 {% elsif site.fathomanalytics == true %}
+{% if site.customfathomurl != "" %}
+<script src="https://{{site.customfathomurl}}" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+{% else %}
 <script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+{% endif %}
 {% endif %}
 
 {% include site-footer.html %}
