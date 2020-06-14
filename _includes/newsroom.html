@@ -1,0 +1,10 @@
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <p>
+        <a class="news-text" href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}).</b></a>
+        {{ post.excerpt }}
+      </p>
+    </li>
+  {% endfor %}
+</ul>
