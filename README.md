@@ -14,4 +14,4 @@ Many thanks to the Jekyll and RubyGems community for great documentation, allowi
 
 Big thanks to the StackOverflow community; they helped me find some nice CSS workarounds for some things (like missing images). I quoted the posts I used when I used them.
 
-Special thanks to [Rishi](https://github.com/rveerepalli) for staying up late on the day before the launch of v0.3.
+Special thanks to [Rishi](https://github.com/rveerepalli) for staying up late on the day before the launch of v0.3 to help fix some issues.
