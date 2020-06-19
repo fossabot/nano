@@ -5,20 +5,16 @@ title: About Nano
 
 # {{page.title}}
 
+**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
+
 Nano is a super lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds.
 
 ### Installation
-
-You can install Nano is two ways:
-
-**a) Cloning a tag.** You can clone the latest tag or the master branch and [configure based on what's recommended in the wiki of this repo](https://github.com/doamatto/nano/wiki/Configuration).
-
-**b) Installing the Gem.** You can also use `gem install nano-theme` and [configure based on what's recommended in the wiki of this repo](https://github.com/doamatto/nano/wiki/Configuration).
-
-### Roadmap
-
-This project gets updates on occasion, but is not in not an active project. If you have an issue with Nano, please [make an issue report here](https://github.com/doamatto/nano/issues/new). This will allow me to fix the issue as soon as possible and release a patch to RubyGems and to GitHub ASAP.
+Installing Nano is simple. Start by downloading the latest version of Nano via [the releases page](https://github.com/doamatto/nano/releases/latest). Afterwards, using Gem, install bundler (`gem install bundler`). Then, run `bundle install` to install everything you need for Nano to work properly. You're now ready to configure your installation and deploy wherever. 
 
 ### Credits
-
 Many thanks to the Jekyll and RubyGems community for great documentation, allowing me to make this simply and swiftly.
+
+Big thanks to the StackOverflow community; they helped me find some nice CSS workarounds for some things (like missing images). I quoted the posts I used when I used them.
+
+Special thanks to [Rishi](https://github.com/rveerepalli) for staying up late on the day before the launch of v0.3 to help fix some issues.
