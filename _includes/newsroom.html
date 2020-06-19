@@ -1,7 +1,7 @@
 <ul>
   {% for post in site.posts %}
     <li>
-      <a class="news-text" href="{{ post.url }}">{{ post.title }} ({{ post.dateS }}).</a>
+      <a class="news-text" href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}).</b></a>
       {{ post.excerpt }}
     </li>
   {% endfor %}
