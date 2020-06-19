@@ -40,51 +40,28 @@ body {
 
 // Typography
 @media only screen and (max-device-width: 480px) {
-  h1 {
-    font-size: 32px !important;
-  }
-
-  h2 {
-    font-size: 21px !important;
-  }
-
-  h3 {
-    font-size: 19px !important;
-  }
-
-  .post {
-    h3 {
-      font-size: 14px !important;
-    }
-  }
-
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 21px !important; }
+  h3 { font-size: 19px !important; }
+  .post { h3 { font-size: 14px !important; } }
   h4, h5, h6 { font-size: 16px !important; }
-  .tagline { font-size: 40px !important; }
+  .tagline, .tagline * { font-size: 40px !important; }
+  b { font-weight: $font-bold !important; } // Keeps bold bold, no matter the scenario
 }
 
-.bold { font-weight: $font-bold !important; } // Jekyll will process bold text to have the "bold" class
-
 p { margin: 1em 0; }
-
 h1 {
   font-size: 48px;
   letter-spacing: -.05em;
   font-weight: $font-bold;
   line-height: 1.1;
 }
-
 h2 {
   font-size: 24px;
   line-height: 1.35;
 }
-
-h3 {
-  font-size: 16px;
-}
-
-ol, ul {
-  margin: 2em 1em;
-}
+h3 { font-size: 16px; }
+ol, ul { margin: 2em 1em; }
 
 a, ul a, ol a, p a { 
   color: $LIGHTlinkColour; 
@@ -134,7 +111,6 @@ header {
     img { 
       display: block;
       border: none !important;
-      vertical-align: bottom;
     }
   }
   a {
@@ -188,7 +164,7 @@ nav {
   padding: 1.5em 32px;
   max-height: 30vh;
 
-  p, .bold {
+  p, b {
     flex: 0 0 auto;
     margin: auto 16px;
     display: flex;
@@ -252,17 +228,11 @@ img {
 }
 
 // Blog Posts
-.post {
-  h3 {
-    font-size: 14px !important;
-  }
-}
+.post { h3 { font-size: 14px !important; } }
 
 // Auto Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: dark) {
-  a, ul a, ol a, p a { 
-    color: $DARKlinkColour;
-  }
+  a, ul a, ol a, p a { color: $DARKlinkColour;}
   a:hover, ul a:hover, ol a:hover, p a:hover {
     color: $DARKlinkHoverColour;
     transition: color 250ms ease-in-out;
