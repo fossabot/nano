@@ -16,7 +16,8 @@ jobs:
       with:
         bundler: Gemfile.lock
         bundler-cache: true
-    
+        ruby-version: 2.7.1
+            
     - name: Setup Repo
       run: bundle install
     
