@@ -1,8 +1,20 @@
 <h2><a href="{{ '/atom.xml' |  | relative_url }}">Subscribe to the Feed.</a></h2>
 <ul>
   {% for post in site.posts %}
-    <li class="nowrap">
-        <a href="{{ post.url }}"><b>{{ post.title }} ({{ post.dateS }}). </b></a>{{ post.excerpt }}
+    <li>
+      {% if site.classicnews == true %}
+      <p>
+        <a href="{{ post.url }}">
+          <b>{{ post.title }} ({{ post.dateS }}). </b>
+        </a>
+        {{ post.excerpt | strip_html }}
+      </p>
+      {% else %}
+        <a href="{{ post.url }}">
+          <b>{{ post.title }} ({{ post.dateS }}). </b>
+        </a>
+        {{ post.excerpt }}
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

@@ -7,6 +7,7 @@ author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon
 url: "https://doamatto.xyz/nano" # Base URL is needed to resolve issues with `jekyll doctor`
+classicnews: false # Bring back the pre-v0.3 newsroom look
 
 # Import fonts to use on your site: https://github.com/doamatto/nano/wiki/Importing-Fonts
 font-import:
