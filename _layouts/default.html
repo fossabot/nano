@@ -11,10 +11,10 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang != "" %}
     <meta property="og:locale" content="{{site.lang}}">
-    {% endif %}{% if page.description != "" %}
+    {% endif %}{% if page.description != nil %}
     <meta name="description" content="{{page.description}}">
     <meta property="og:description" content="{{page.description}}">
-    <meta name="twitter:description" content="{{page.description}}">{% elsif site.description != "" %}<meta name="description" content="{{site.description}}">
+    <meta name="twitter:description" content="{{page.description}}">{% elsif site.description != nil %}<meta name="description" content="{{site.description}}">
     <meta property="og:description" content="{{site.description}}">
     <meta name="twitter:description" content="{{site.description}}">{% endif %}{% for item in site.font-import %}
     <link rel="stylesheet" href="{{item}}">{% endfor %}
