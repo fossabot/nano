@@ -1,12 +1,12 @@
 <!-- Analytics Start -->
 {% if site.simpleanalytics == true %}
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script src="https://scripts.simpleanalyticscdn.com/latest.js" async defer></script>
 <noscript>
-  <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" class="pxl">
+  <img class="pxl" src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="">
 </noscript>
 {% elsif site.matomoanalytics == true %}
 <!-- Matomo -->
-<script type="text/javascript">
+<script>
   var _paq = window._paq || [];
   _paq.push(["setDoNotTrack", true]);
   _paq.push(["disableCookies"]);
@@ -22,7 +22,7 @@
 </script>
 <noscript>
   <p>
-    <img src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" class="pxl">
+    <img class="pxl" src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="">
   </p>
 </noscript>
 {% elsif site.fathomanalytics == true %}
@@ -33,9 +33,9 @@
 {% endif %}
 {% elsif site.plausibleanalytics == true %}
 {% if site.customplausibleurl != "" %}
-<script async defer data-domain="{{site.github.url}}" src="https://{{site.customplausibleurl}}/js/index.js"></script>
+<script data-domain="{{site.github.url}}" src="https://{{site.customplausibleurl}}/js/index.js" async defer></script>
 {% else %}
-<script async defer data-domain="{{site.github.url}}" src="https://plausible.io/js/plausible.js"></script>
+<script data-domain="{{site.github.url}}" src="https://plausible.io/js/plausible.js" async defer></script>
 {% endif %}
 {% endif %}
 <!-- Analytics End -->
