@@ -48,7 +48,7 @@ footerLinks: # Control the Footer Links
   - title: Contact
     url: "https://doamatto.xyz/contact"
 
-# Don't edit below this line
+# Don't edit below this line without knowing what you're doing
 
 exclude:
   - README.md
@@ -56,11 +56,16 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - nano.gemspec
+  - nano-theme.gemspec
   - .jekyll-cache
+
+feed:
+  excerpt_only: false
+  path: atom.xml
 
 plugins:
   - jekyll
+  - jekyll-feed
   - jekyll-sass-converter
   - jekyll-sitemap
   
