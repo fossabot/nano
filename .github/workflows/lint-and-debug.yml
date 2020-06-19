@@ -22,7 +22,7 @@ jobs:
       run: bundle install
     
     - name: Config/Versioning Debugging
-      run: jekyll doctor
+      run: bundle exec jekyll doctor
     
     - name: Test Build
-      run: jekyll b
+      run: bundle exec jekyll build
