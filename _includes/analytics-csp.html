@@ -8,6 +8,12 @@
   {% endif %}
 {% elsif site.matomoanalytics %}
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qj/jwzjem2sfrDp/CEX8ODDzwfezTtpX43MRAcQTuUQ=' https://cdn.matomo.cloud/{{site.matomourl}}/matomo.js">
+{% elsif site.plausibleanalytics %}
+  {% if site.customplausibleurl == "" %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://plausible.io/js/plausible.js">
+  {% else %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://{{site.customplausibleurl}}/js/index.js">
+  {% endif %}
 {% else %}
 <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
 {% endif %}

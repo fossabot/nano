@@ -32,7 +32,8 @@ customfathomurl: ""
 matomoanalytics: false
 matomositeid: ""
 matomourl: ""
-plausibleanalytics: true
+plausibleanalytics: false
+customplausibleurl: ""
 
 tagline: "Nano for Jekyll"
 navigation: # Control the Navigation Bar

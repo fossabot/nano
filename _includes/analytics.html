@@ -31,5 +31,11 @@
 {% else %}
 <script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
 {% endif %}
+{% elsif site.plausibleanalytics == true %}
+{% if site.customplausibleurl != "" %}
+<script async defer data-domain="{{site.github.url}}" src="https://{{site.customplausibleurl}}/js/index.js"></script>
+{% else %}
+<script async defer data-domain="{{site.github.url}}" src="https://plausible.io/js/plausible.js"></script>
+{% endif %}
 {% endif %}
 <!-- Analytics End -->
