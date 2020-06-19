@@ -6,6 +6,7 @@ description: "Nano is a lightweight Jekyll theme built to work great on all plat
 author: "doamatto" # For SEO
 logo: "/assets/logo.svg" # Site logo
 favicon: "/assets/logo.svg" # Add a favicon
+url: "https://doamatto.xyz/nano" # Base URL is needed to resolve issues with `jekyll doctor`
 
 # Import fonts to use on your site: https://github.com/doamatto/nano/wiki/Importing-Fonts
 font-import:
