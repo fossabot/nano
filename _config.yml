@@ -7,7 +7,7 @@ description: "Nano is a lightweight Jekyll theme built to work great on all plat
 author: "doamatto"
 logo: "/assets/logo.svg"
 favicon: "/assets/logo.svg"
-url: "https://doamatto.xyz/nano" # Base URL is needed to resolve issues with `jekyll doctor`
+url: "https://doamatto.xyz/nano"
 
 classicnews: false # Bring back the pre-v0.3 newsroom look
 unsafecontent: false # DO NOT CHANGE WITHOUT READING THIS: https://github.com/doamatto/nano/wiki/Content-Security-Policy

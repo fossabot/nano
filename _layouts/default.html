@@ -11,6 +11,7 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang != "" %}
     <meta property="og:locale" content="{{site.lang}}">
+    <meta http-equiv="language" content="{{site.lang}}">
     {% endif %}{% if page.description != nil %}
     <meta name="description" content="{{page.description}}">
     <meta property="og:description" content="{{page.description}}">
@@ -18,8 +19,11 @@
     <meta property="og:description" content="{{site.description}}">
     <meta name="twitter:description" content="{{site.description}}">{% endif %}{% for item in site.font-import %}
     <link rel="stylesheet" href="{{item}}">{% endfor %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    {% if site.favicon != "" %}<link rel="shortcut icon" href="{{ site.favicon }}">{% endif %}
+    {% if site.favicon != "" %}<link rel="shortcut icon" href="{{ site.favicon }}">
+    <link rel="icon" href="{{site.favicon}}">
+    <link rel="apple-touch-icon" href="{{site.favicon}}">{% endif %}
     {% include verifications.html %}
   </head>
   <body>
