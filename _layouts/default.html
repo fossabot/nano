@@ -9,6 +9,7 @@
     {% include csp.html %}
     <meta name="referrer" content="no-referrer, same-origin">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="twitter:title" content="{{page.title}} - {{site.title}}">
     <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang != "" %}
     <meta property="og:locale" content="{{site.lang}}">
     <meta http-equiv="language" content="{{site.lang}}">
