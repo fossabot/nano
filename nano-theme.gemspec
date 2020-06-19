@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "nano-theme"
-  spec.version = "0.3.3"
+  spec.version = "0.3.4"
   spec.authors = ["doamatto"]
   spec.email = ["hello@doamatto.xyz"]
   spec.summary = "Nano is a super lightweight Jekyll theme built to work great on all platforms, respect user privacy, and load at lightning-fast speeds."
@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
     "wiki_uri" => "https://github.com/doamatto/nano/wiki"
   }
   spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_posts|_sass|LICENSE|README)}i) }
-  spec.add_dependency "jekyll", "~> 4.0"
+  spec.add_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_depedency "jekyll-feed", "~> 0.13"
 end
