@@ -117,10 +117,10 @@ nav {
         font-size: 1.1em;
         text-decoration: none;
         color: $navColour;
-        :hover {
-          text-decoration: underline;
-          transition: text-decoration 150ms ease-in-out;
-        }
+      }
+      a:hover {
+        text-decoration: underline;
+        transition: text-decoration 150ms ease-in-out;
       }
       :last-child { a { padding-right: 0; } }
     }
@@ -179,6 +179,13 @@ footer {
     margin-left: 2em !important;
     margin-right: 24px !important;
   }
+  @media(prefers-color-scheme: dark) {
+    a { color: $DARKlinkColour; }
+    a:hover, ul a:hover, ol a:hover, p a:hover {
+      color: $DARKlinkHoverColour;
+      transition: color 250ms ease-in-out;
+    }
+  }
   .highlight, p, hr {
     margin-left: 1em !important;
     margin-right: 24px !important;
@@ -205,11 +212,6 @@ img {
 
 // Auto Dark Theme as Declared by Browser/OS
 @media (prefers-color-scheme: dark) {
-  a, ul a, ol a, p a { color: $DARKlinkColour;}
-  a:hover, ul a:hover, ol a:hover, p a:hover {
-    color: $DARKlinkHoverColour;
-    transition: color 250ms ease-in-out;
-  }
   .highlight {
     background: $DARKcodebgColour;
     color: $DARKcodeColour;
