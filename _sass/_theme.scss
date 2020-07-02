@@ -1,19 +1,6 @@
 // Import configuration
 @import "config";
 
-// Typography and Misc.
-.centre {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 100%;
-
-  text-align: center;
-}
-
-// ---
-
 // Document Prep
 * {
   margin: 0;
@@ -24,10 +11,8 @@ body {
   @supports (font-variation-settings: normal) {
     font-family: $font-var;
   }
-
   background: $LIGHTbgColour;
   color: $LIGHTtextColour;
-
   font-family: $font;
   font-weight: $font-regular;
   margin: 0 auto;
