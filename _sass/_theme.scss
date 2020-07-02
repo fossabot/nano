@@ -2,7 +2,6 @@
 @import "config";
 
 // Typography and Misc.
-
 .centre {
   display: flex;
   flex-direction: row;
@@ -185,11 +184,10 @@ footer {
   flex-wrap: nowrap;
   justify-content: center;
   text-align: center;
-}
-
-.copyright {
-  font-size: .75em; 
-  a { text-decoration: underline; }
+  p {
+    font-size: .75em; 
+    a { text-decoration: underline; }
+  }
 }
 
 .end {
@@ -257,4 +255,22 @@ img {
   width: 1px;
   height: 1px;
   border: none;
+}
+
+// Table Formatting
+table {
+  border: 1px solid #fff;
+  padding: .5em .5em;
+  width: 100%;
+  thead {
+    background: #999999;
+  }
+  tr {
+    text-align: center;
+    td {
+      border: 1px solid #fff;
+      margin: 1em 1em;
+      text-align: left;
+    }
+  }
 }
