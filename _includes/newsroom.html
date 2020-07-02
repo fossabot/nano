@@ -1,7 +1,7 @@
 <h3><a href="{{ '/atom.xml' | relative_url }}">Subscribe to the Atom feed.</a></h3>
 
 <ul>
-  {% if site.disablecategoires == true %}
+  {% if site.disablecategories == true %}
     {% for post in site.posts %}
       <li>
         {% if site.classicnews == true %}
@@ -24,15 +24,16 @@
       {% capture category_name %}{{category | first}}{% endcapture %}
       <li>
         <p>
-          <a href="#{{category_name}}">{{category_name}}</a>
+          <a href="#{{category_name | slugize}}">{{category_name}}</a>
         </p>
       </li>
     {% endfor %}
   {% endif %}
 </ul>
 
-{% for category in site.categories %}
-  <h2 id="{{category_name}}">{{category_name}}</h2>
+{% if site.disablecategories == false %}
+  {% for category in site.categories %}
+  <h2 id="{{category_name | slugize}}">{{category_name}}</h2>
   <ul>
     {% capture category_name %}{{ category | first }}{% endcapture %}
     {% for post in site.categories[category_name] %}
@@ -53,4 +54,5 @@
       </li>
     {% endfor %}
   </ul>
-{% endfor %}
+  {% endfor %}
+{% endif %}
