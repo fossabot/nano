@@ -32,7 +32,6 @@ body {
 p { margin: 1em 0; }
 h1 {
   font-size: 48px;
-  letter-spacing: -.05em;
   font-weight: $font-bold;
   line-height: 1.1;
 }
@@ -54,14 +53,10 @@ a {
 
 // Code blocks
 .highlight {
-  @supports (font-variation-settings: normal) {
-    font-family: $codeFont-var;
-  }
+  @supports (font-variation-settings: normal) { font-family: $codeFont-var; }
   font-family: $codeFont;
-  
   background: $LIGHTcodebgColour;
   color: $LIGHTcodeColour;
-
   padding: .5vh 1vh .5vh 1vh;
 }
 
@@ -71,7 +66,6 @@ header {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  cursor: default;
   background: $accentColour;
   padding-left: 16px;
   * {
