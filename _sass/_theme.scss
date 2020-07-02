@@ -238,33 +238,29 @@ img {
 
 // Table Formatting
 table {
+  display: block;
+  overflow: auto;
+  height: 200px;
   border-collapse: collapse;
+  table-layout: fixed;
   padding: .5em .5em;
   margin: 0 auto;
-  overflow-x: auto;
-  height: ;
-  th {
-    @media(min-width: 481px) {
-      padding: .25em 2em;
-    }
-  }
-  thead, td {
-    @media(prefers-color-scheme: light) { border: 1px solid #000; }
-    border: 1px solid #fff;
-    padding: .5em .5em;
-  }
+  width: 100%;
+  @media(max-width: 480px) { width: 300px; }
   thead {
     background: #353230;
+    color: #fff;
     @media(prefers-color-scheme: dark) {
       background: #d3d3d3;
       color: #000;
     }
-    color: #fff;
   }
-  tr {
-    text-align: center;
+  th { @media(min-width: 481px) { padding: .25em 2em; } }
+  th, td { padding: .5em .5em; }
+  tbody {
     td {
-      text-align: left;
+      @media(prefers-color-scheme: light) { border: 1px solid #000; }
+      border: 1px solid #fff;
     }
   }
 }
