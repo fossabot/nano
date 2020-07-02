@@ -42,14 +42,12 @@ h2 {
 h3 { font-size: 16px; }
 ol, ul { margin: 2em 1em; }
 
-a { 
-  color: $LIGHTlinkColour; 
-  text-decoration: none;
-  :hover {
-    color: $LIGHTlinkHoverColour;
-    transition: color 250ms ease-in-out;
-  }
+a { color: $LIGHTlinkColour; }
+a:hover {
+  color: $LIGHTlinkHoverColour;
+  transition: color 250ms ease-in-out;
 }
+ul a, ol a { text-decoration: none; }
 
 // Code blocks
 .highlight {
@@ -161,7 +159,11 @@ footer {
   text-align: center;
   p {
     font-size: .75em; 
-    a { text-decoration: underline; }
+    a {
+      color: $LIGHTlinkColour;
+      @media(prefers-color-scheme: dark) { color: $DARKlinkColour; }
+      text-decoration: underline;
+    }
   }
 }
 
@@ -238,15 +240,26 @@ img {
 table {
   border-collapse: collapse;
   padding: .5em .5em;
-  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+  height: ;
+  th {
+    @media(min-width: 481px) {
+      padding: .25em 2em;
+    }
+  }
   thead, td {
     @media(prefers-color-scheme: light) { border: 1px solid #000; }
     border: 1px solid #fff;
     padding: .5em .5em;
   }
   thead {
-    background: #d3d3d3;
-    color: #000 !important;
+    background: #353230;
+    @media(prefers-color-scheme: dark) {
+      background: #d3d3d3;
+      color: #000;
+    }
+    color: #fff;
   }
   tr {
     text-align: center;
