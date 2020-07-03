@@ -1,6 +1,7 @@
 # Nano
 
 [![Gem Version](https://badge.fury.io/rb/nano-theme.svg)](https://badge.fury.io/rb/nano-theme) [![Gem downloads](https://img.shields.io/gem/dt/nano-theme)](https://rubygems.org/gems/nano-theme)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdoamatto%2Fnano.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdoamatto%2Fnano?ref=badge_shield)
 
 **This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
 
@@ -15,3 +16,6 @@ Many thanks to the Jekyll and RubyGems community for great documentation, allowi
 Big thanks to the StackOverflow community; they helped me find some nice CSS workarounds for some things (like missing images). I quoted the posts I used when I used them.
 
 Special thanks to [Rishi](https://github.com/rveerepalli) for staying up late on the day before the launch of v0.3 to help fix some issues.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdoamatto%2Fnano.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdoamatto%2Fnano?ref=badge_large)
