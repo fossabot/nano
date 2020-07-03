@@ -50,13 +50,14 @@ a:hover {
 ul a, ol a { text-decoration: none; }
 
 // Code blocks
-.highlight {
+.highlight, code {
   @supports (font-variation-settings: normal) { font-family: $codeFont-var; }
   font-family: $codeFont;
   background: $LIGHTcodebgColour;
   color: $LIGHTcodeColour;
   padding: .5vh 1vh .5vh 1vh;
 }
+code { padding: .25vh .5vh .25vh .5vh; }
 
 // Navigation
 header {
