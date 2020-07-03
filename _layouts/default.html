@@ -6,26 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include csp.html %}
     <meta name="referrer" content="no-referrer, same-origin">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <meta name="twitter:title" content="{{page.title}} - {{site.title}}">
-    <meta property="og:title" content="{{page.title}} - {{site.title}}">{% if site.lang != "" %}
-    <meta property="og:locale" content="{{site.lang}}">
-    <meta http-equiv="language" content="{{site.lang}}">
-    {% endif %}{% if page.description != nil %}
-    <meta name="description" content="{{page.description}}">
-    <meta property="og:description" content="{{page.description}}">
-    <meta name="twitter:description" content="{{page.description}}">{% elsif site.description != nil %}<meta name="description" content="{{site.description}}">
-    <meta property="og:description" content="{{site.description}}">
-    <meta name="twitter:description" content="{{site.description}}">{% endif %}{% for item in site.font-import %}
-    <link rel="stylesheet" href="{{item}}">{% endfor %}
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    {% for item in site.font-import %}
+    <link rel="stylesheet" href="{{item}}">
+    {% endfor %}
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    {% if site.favicon != "" %}<link rel="shortcut icon" href="{{ site.favicon }}">
+    {% if site.favicon != "" %}
+    <link rel="shortcut icon" href="{{ site.favicon }}">
     <link rel="icon" href="{{site.favicon}}">
-    <link rel="apple-touch-icon" href="{{site.favicon}}">{% endif %}
+    <link rel="apple-touch-icon" href="{{site.favicon}}">
+    {% endif %}
     {% include verifications.html %}
+    {% include seo.html %}
+    {% include csp.html %}
   </head>
   <body>
     {{ content }}
