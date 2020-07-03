@@ -12,6 +12,12 @@
 <meta property="og:locale" content="{{site.lang}}">
 <meta http-equiv="language" content="{{site.lang}}">
 {% endif %}
+{% if page.author != nil %}
+<meta name="author" content="{{site.author}}">
+<meta name="article:author" content="{{page.author}}">
+{% elsif site.author != nil %}
+<meta name="author" content="{{site.author}}">
+{% endif %}
 {% if page.excerpt != nil %}
 <meta name="description" content="{{ page.excerpt | strip_html | strip}}">
 <meta property="og:description" content="{{page.excerpt | strip_html | strip }}">
