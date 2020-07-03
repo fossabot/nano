@@ -13,9 +13,9 @@
 <meta http-equiv="language" content="{{site.lang}}">
 {% endif %}
 {% if page.excerpt != nil %}
-<meta name="description" content="{{ page.excerpt | strip_html }}">
-<meta property="og:description" content="{{page.excerpt | strip_html }}">
-<meta name="twitter:description" content="{{page.excerpt | strip_html }}">
+<meta name="description" content="{{ page.excerpt | strip_html | strip}}">
+<meta property="og:description" content="{{page.excerpt | strip_html | strip }}">
+<meta name="twitter:description" content="{{page.excerpt | strip_html | strip }}">
 {% elsif page.description != nil %}
 <meta name="description" content="{{page.description}}">
 <meta property="og:description" content="{{page.description}}">
