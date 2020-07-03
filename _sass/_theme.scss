@@ -268,3 +268,7 @@ table {
 
 // Footnotes
 .footnote { text-decoration: none; }
+
+// Definition lists
+dt { font-weight: $font-bold; }
+dd { margin: .25em 1em; }
