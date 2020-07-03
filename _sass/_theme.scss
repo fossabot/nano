@@ -179,7 +179,7 @@ footer {
   width: 75vw;
   margin: 1em auto;
   ul, ol {
-    margin-left: 2em !important;
+    margin-left: 2em;
     margin-right: 24px !important;
   }
   @media(prefers-color-scheme: dark) {
@@ -272,3 +272,10 @@ table {
 // Definition lists
 dt { font-weight: $font-bold; }
 dd { margin: .25em 1em; }
+
+// Checklists
+.task-list {
+  list-style-type: none;
+  margin-left: 1em !important;
+}
+.task-list-item-checkbox { margin-right: .5em; }
